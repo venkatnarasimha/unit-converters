@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./temp.js" defer>
+
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Length </button>
+          <div class="dropdown-content">
+            <a href="length-converter.html">Length</a>    
+          </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Weight </button>
+            <div class="dropdown-content">
+                <a href="weight-and-mass-converter.html">Weight/mass</a>
+              </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Temperature </button>
+            <div class="dropdown-content">
+                <a href="temperature.html">temperature</a>
+              </div>
+        </div>
+      </div>
+    <section class="wrapper">
+        <form action="">
+            <fieldset class="fieldset"> 
+                <legend class="label">Temperature Converter</legend>
+                <p>
+                    <label class="label" >Enter Value : </label>
+                </p>
+                <br>
+                <p>
+                    <input type="text" class="text-box input-value" placeholder="Enter Numerical value">
+                </p>
+                <br>
+            <p>
+                <label class="label">From : </label>
+            </p>
+            <br>
+            <p>
+                <select name="From" id="from" class="text-box from-type">
+                   <!-- <option value="">Select</option> -->
+                   <option value="kelvin">kelvin[K]</option>
+                   <option value="celsius">Celsius[°C]</option>
+                   <option value="fahrenhiet">Fahrenheit[°F]</option>
+               </select>
+            </p>
+            <br>
+            <p>
+                <label class="label">To : </label>
+            <p>
+                <br>
+            <p>
+                <select name="From" id="from" class="text-box to-type">
+                    <!-- <option value="">Select</option> -->
+                    <option value="kelvin">kelvin[K]</option>
+                    <option value="celsius">Celsius[°C]</option>
+                    <option value="fahrenheit">Fahrenheit[°F]</option>
+                </select>
+            </p>
+            <br>
+            <p>
+                <label class="label">Result Value : </label>
+            </p>
+            <br>
+            <p>
+                <input type="text" class="text-box outputValue" readonly placeholder="Result">
+            </p>
+            <br>
+            <p>
+                <input type="text" class="text-box general-info" readonly>
+            </p>
+            <br>
+            <p>
+                <input type="reset" value="Reset" class="but">
+                <button type="button" class="but copy">Copy</button>
+             </p>
+             <br>
+            </fieldset>
+        </form>
+    </section>
+    <br><br>
+<div style="text-align: center;">
+<button class="collapsible">How to Convert Celsius to Kelvin & viceversa</button>
+<div class="content">
+    <h3>How to Convert Celsius to Kelvin</h3>
+    <p>K = C + 273.15</p><br>
+    <p>C = K - 273.15</p><br>
+    <p> <b>Example:</b> convert 15 °C to: K</p>
+    <p>15 °C = 15 + 273.15 = 288.15 K</p><br>
+    <p><b>Example:</b> convert 300 K to °C</p>
+    <p>300 K = 300 - 273.15 = 26.85 °C</p>
+</div>
+<button class="collapsible">How to Convert Celsius to Fahrenheit & viceversa </button>
+<div class="content">
+    <h3>How to Convert Celsius to Fahrenheit</h3>
+    <p>F =(9/5)*C + 32</p><br>
+    <p>C =(5/9)*(F - 32)</p><br>
+    <p> <b>Example:</b> convert 15 °C to °F : </p>
+    <p>15 °C = 15*(9/5)+32 = 59 °F</p><br>
+    <p><b>Example:</b> convert 50 °F to °C</p>
+    <p>50 °F = (50-32)*(5/9) = 10 °C</p>
+</div>
+<button class="collapsible">How to Convert Fahrenheit to Kelvin & viceversa</button>
+<div class="content">
+    <h3>How to Convert Kelvin to Fahrenheit</h3>
+    <p>F =(9/5)*K - 459.67</p><br>
+    <p>K =(9/5)*(F + 459.67)</p><br>
+    <p> <b>Example:</b> convert 300 K to °F : </p>
+    <p>300 K = 300*(9/5)- 459.67 = 80.33 °F</p><br>
+    <p><b>Example:</b> convert 50 °F to K</p>
+    <p>50 °F = (50+459.67)*(5/9) = 283.15 K</p>
+</div>
+</div>
+<div class=above-footer>
+
+</div>
+<footer class="footer">
+    <span class="footer-copyright-wat">© UTILITY APPLICATIONS</span>
+    <span class="footer-copyright-divider">|</span>
+    <span class="footer-copyright-wat"> UNIT CONVERTERS</span>
+    <span class="footer-copyright-divider">|</span>
+    <span class="footer-copyright-arr"> NO COPYRIGHTS</span>
+</footer>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>

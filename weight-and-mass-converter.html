@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./mass.js" defer>
+
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Length </button>
+          <div class="dropdown-content">
+            <a href="length-converter.html">Length</a>    
+          </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Weight </button>
+            <div class="dropdown-content">
+                <a href="weight-and-mass-converter.html">Weight/mass</a>
+              </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Temperature </button>
+            <div class="dropdown-content">
+                <a href="temperature.html">temperature</a>
+              </div>
+        </div>
+      </div>
+    <section class="wrapper">
+        <form action="">
+            <fieldset class="fieldset"> 
+                <legend class="label">Mass Converters</legend>
+                <p>
+                    <label class="label" >Enter Value : </label>
+                </p>
+                <br>
+                <p>
+                    <input type="text" class="text-box input-value" placeholder="Enter Numerical value">
+                </p>
+                <br>
+            <p>
+                <label class="label">From : </label>
+            </p>
+            <br>
+            <p>
+                <select name="From" id="from" class="text-box from-type">
+                   <!-- <option value="">Select</option> -->
+                   <option value="kilogram">kilogram[kg]</option>
+                   <option value="gram">Gram[g]</option>
+                   <option value="milligram">milligram[mg]</option>
+                   <option value="ton">ton(metric)[t]</option>
+                   <option value="pound">pound[lbs]</option>
+                   <option value="ounce">ounce[oz]</option>
+                   <option value="carat">carat[ct, car]</option>
+               </select>
+            </p>
+            <br>
+            <p>
+                <label class="label">To : </label>
+            <p>
+                <br>
+            <p>
+                <select name="From" id="from" class="text-box to-type">
+                    <!-- <option value="">Select</option> -->
+                    <option value="kilogram">kilogram[kg]</option>
+                    <option value="gram">Gram[g]</option>
+                    <option value="milligram">milligram[mg]</option>
+                    <option value="ton">ton(metric)[t]</option>
+                    <option value="pound">pound[lbs]</option>
+                    <option value="ounce">ounce[oz]</option>
+                    <option value="carat">carat[ct, car]</option>
+                </select>
+            </p>
+            <br>
+            <p>
+                <label class="label">Result Value : </label>
+            </p>
+            <br>
+            <p>
+                <input type="text" class="text-box outputValue" readonly placeholder="Result">
+            </p>
+            <br>
+            <p>
+                <input type="text" class="text-box general-info" readonly>
+            </p>
+            <br>
+            <p>
+                <input type="reset" value="Reset" class="but">
+                <button type="button" class="but copy">Copy</button>
+             </p>
+             <br>
+            </fieldset>
+        </form>
+    </section>
+    <div class=above-footer>
+
+    </div>
+    <footer class="footer">
+        <span class="footer-copyright-wat">© UTILITY APPLICATIONS</span>
+        <span class="footer-copyright-divider">|</span>
+        <span class="footer-copyright-wat"> UNIT CONVERTERS</span>
+        <span class="footer-copyright-divider">|</span>
+        <span class="footer-copyright-arr"> NO COPYRIGHTS</span>
+    </footer>
+</body>
+</html>
